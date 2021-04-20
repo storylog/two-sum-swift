@@ -9,25 +9,15 @@ import XCTest
 @testable import TwoSum
 
 class TwoSumTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testSampleCases() throws {
+        XCTAssertEqual(TwoSum.solve([2, 7, 11, 15], target: 9), [0, 1])
+        XCTAssertEqual(TwoSum.solve([3, 2, 4], target: 6), [1, 2])
+        XCTAssertEqual(TwoSum.solve([3, 3], target: 6), [0, 1])
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testMoreCases() throws {
+        XCTAssertEqual(TwoSum.solve([0, 1, 2, 3, 4, 5, 6, 7, 8], target: 15), [7, 8])
+        XCTAssertEqual(TwoSum.solve([-10, 1, 1, 1, 1, 1, 1, 1, 10], target: 0), [0, 8])
+        XCTAssertEqual(TwoSum.solve([5, 4, 2, 6], target: 10), [1, 3])
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
