@@ -25,8 +25,10 @@ Input: numbers = [3, 3], target = 6
 Output: [0, 1]
 ```
 
-Constraints:
-- numbers.length = 0...1000000
-- numbers[i] = -1000000...1000000
-- target = -1000000...1000000
-- Only one valid answer exists
+Constraints
+```
+0 <= numbers.length <= 1000000
+-1000000 <= numbers[i] <= 1000000
+-1000000 <= target <= 1000000
+Only one valid answer exists
+```
